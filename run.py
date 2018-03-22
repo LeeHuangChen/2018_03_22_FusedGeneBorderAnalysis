@@ -23,7 +23,7 @@ def main():
 
             borderDict = load(open(os.path.join(conf.inputFolder, filename), "rb"))
             successRatio, success, totalBorders = borderAnalysis.analyizeBorder(borderDict)
-            successRatio2, success2, totalBorders2 = borderAnalysis.analyizeBorder(borderDict, False)
+            successRatio2, success2, totalBorders2 = borderAnalysis.analyizeBorder(borderDict, True)
 
             wf.write(str(TEvo) + "\t" + str(NFam) + "\t" + str(NFusions) + "\t")
             wf.write(str(successRatio) + "\t" + str(successRatio) + "\t" + str(totalBorders) + "\t")
